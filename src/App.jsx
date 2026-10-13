@@ -102,8 +102,8 @@ function App() {
       <Encabezado />
 
       <TarjetaBienvenida
-        nombre="estudiante"
-        descripcion="Esta es tu primera aplicación creada con React y Vite."
+        nombre="----"
+        descripcion="Prueba de la aplicacion creada con React y Vite."
       />
 
       <section className="panel-tareas">
