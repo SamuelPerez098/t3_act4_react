@@ -15,7 +15,7 @@ function Encabezado() {
 function TarjetaBienvenida({ nombre, descripcion }) {
   return (
     <section className="tarjeta-bienvenida">
-      <h2>¡Hola, {nombre}!</h2>
+      <h2>¡---- {nombre}!</h2>
       <p>{descripcion}</p>
     </section>
   );
