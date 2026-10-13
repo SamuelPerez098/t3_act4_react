@@ -1,0 +1,67 @@
+:root {
+  --bg-color: #C8C2AA;
+  --color: #4D493E;
+  --letter-spacing: 0.1rem;
+  --box-shadow: 3px 3px 0 rgba(77, 73, 62, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  background-size: 4px 4px;
+  background-image:
+    linear-gradient(90deg, transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px);
+  color: var(--color);
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: var(--letter-spacing);
+  box-shadow:
+    inset 0 0 150px rgba(77, 73, 62, 0.4),
+    inset 0 0 150px rgba(77, 73, 62, 0.3);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: rgba(77, 73, 62, 0.35);
+  color: var(--color);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+  background-color: var(--color);
+  color: var(--bg-color);
+}
+
+input[type="text"] {
+  color: var(--color);
+}
+
+input[type="text"]::placeholder {
+  color: rgba(77, 73, 62, 0.65);
+}
+
+main {
+  flex: 1;
+}
+
+img {
+  box-shadow: var(--box-shadow);
+}
